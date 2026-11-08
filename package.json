@@ -1,0 +1,18 @@
+{
+  "name": "agent-bridge-mcp",
+  "version": "0.2.0",
+  "private": false,
+  "type": "module",
+  "description": "MCP servers that give several coding agents a shared memory and let one delegate work to another (agy, Claude Code, Codex CLI)",
+  "license": "MIT",
+  "repository": "github.com/LXW1205/agent-bridge",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "memory": "node memory-server.mjs",
+    "consult": "node consult-server.mjs",
+    "doctor": "node doctor.mjs",
+    "test": "node test/smoke.mjs"
+  }
+}
